@@ -6,6 +6,20 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Product.delete_all
+Product.create(:title => 'Debug It!',
+  :description => 
+    %{<p>
+        <em>Web Design for Developers</em> will show you how to make your
+        web-based application look professionally designed. We'll help you
+        learn how to pick the right colors and fonts, avoid costly interface
+        and accessibility mistakes -- your application will really come alive.
+        We'll also walk you through some common Photoshop and CSS techniques
+        and work through a web site redesign, taking a new design from concept
+        all the way to implementation.
+      </p>},
+  :image_url =>   '/images/debug.jpg',    
+  :price => 34.95)
+# . . .
 Product.create(:title => 'Web Design for Developers',
   :description => 
     %{<p>
